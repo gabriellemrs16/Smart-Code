@@ -1,0 +1,28 @@
+[
+	{
+	  "id": 1,
+	  "name": "John Smith",
+      "type": "Lawn Mower",
+	  "make": "Lawny Lawnson",
+      "model": "LM-3",
+	  "cost": 129.99,
+	  "description": "Mower making strange sound, needs rubber gasket in motor housing.",
+	  "date": "9/23/2021",
+      "email": "sojohn@gmail.com",
+	  "phone": "(905) 735-9836",
+      "completed": true
+	},
+    {
+        "id": 2,
+        "name": "John Smith",
+        "type": "Lawn Tractor",
+        "make": "Yamaha",
+        "model": "YH-117A",
+        "cost": 129.99,
+        "description": "Drive train failure, starts but won't drive.",
+        "date": "9/27/2021",
+        "email": "sojohn@gmail.com",
+        "phone": "(905) 735-9836",
+        "completed": false
+      }
+]
