@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Home</title>
+    <title>Manufacturers</title>
 
-   
-
+    <!--Filter input dependencies-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	  <link rel="stylesheet" href="css/allEquipment.css">
     
      <!-- Custom styles for this template -->
      <!-- navbar style -->
@@ -94,10 +100,10 @@
                 Equipment
               </a>
               <div class="dropdown-menu" aria-labelledby="equipmentNavbarDropdown">
-                <a class="dropdown-item" href="#">New Equipment</a>
-                <a class="dropdown-item" href="#">All Equipment</a>
+                <a class="dropdown-item" href="./newEquipment.html">New Equipment</a>
+                <a class="dropdown-item" href="./allEquipment.html">All Equipment</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Manufacturer</a>
+                <a class="dropdown-item" href="./manufacturers.html">Manufacturer</a>
               </div>
 
 
@@ -134,15 +140,59 @@
 <!-- CONTENT. REPLACE IT  -->
 <div class="container">
 <main>
+    <h1>Manufacturers</h1>
+    <input class="form-control" id="myInput" type="text" placeholder="Search table">
+    <table class="table">
+        <thead style="background-color: #0d6efd; color: white;">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+            <th scope="col">Main Address</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <th scope="row">1</th>
+            <td>YardWorks</td>
+            <td>John Frusciante</ts>
+            <td>(905)461-8877</td>
+            <td>guitar@mail.com</td>
+            <td>12 Main St., St.Catherines, ON</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Greenworks</td>
+            <td>Billy Joel</td>
+            <td>(905)708-0998</td>
+            <td>the.joel@mail.com</td>
+            <td>30 Fourth Ave., St.Catherines, ON</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Husqvarna</td>
+            <td>Celine Dion</td>
+            <td>(905)876-5463</td>
+            <td>I.Sing@mail.com</td>
+            <td>43 Church St., Welland, ON</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>WORX</td>
+            <td>Dwight Schrute</td>
+            <td>(905)908-6421</td>
+            <td>beets@mail.com</td>
+            <td>Schrute Farms, Hamilton, ON</td>
+          </tr>
+        </tbody>
+      </table>
 
-<div class="col-md-7 col-lg-8">
-
-  <h1> Your content here</h1>
-
- </div>
-
-
-
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </main>
 
 
@@ -170,8 +220,18 @@
   </div>
   
 
-          <!-- SCRIPTS -->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script name="table-filter">
+            $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
 </body>
